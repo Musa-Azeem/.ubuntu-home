@@ -1,4 +1,4 @@
-# ubuntu-home
+# .ubuntu-home
 
 ## Ubuntu Config Files
 
