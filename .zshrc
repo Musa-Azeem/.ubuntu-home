@@ -94,20 +94,17 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Homebrew
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-# android studio:
-export PATH=/opt/android-studio/bin:$PATH
+# Android Studio
+# export PATH=/opt/android-studio/bin:$PATH
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# Custom Commands
+export PATH=~/bin:$PATH
 
+
+# Custom Aliases
 alias src-env='source env/bin/activate'
 alias open='xdg-open'
 alias view-cam='vlc v4l2:///dev/video0'
