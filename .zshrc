@@ -103,8 +103,14 @@ source $ZSH/oh-my-zsh.sh
 # Custom Commands
 export PATH=~/bin:$PATH
 
+# Start tmux always
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+    exec tmux
+fi
 
 # Custom Aliases
 alias src-env='source env/bin/activate'
 alias open='xdg-open'
 alias view-cam='vlc v4l2:///dev/video0'
+alias tmuxls='tmux list-sessions'
+alias tmuxa='tmux attach-session -t'
