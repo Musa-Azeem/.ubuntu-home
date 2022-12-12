@@ -17,7 +17,7 @@ Add:
 
 #### To export gnome color profile:
 
-`dconf dump /org/gnome/terminal/legacy/profiles:/ < gnome-terminal-profiles.dconf`
+`dconf dump /org/gnome/terminal/legacy/profiles:/ > gnome-terminal-profiles.dconf`
 
 To import gnome color profile:
 
